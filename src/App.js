@@ -34,7 +34,8 @@ function App() {
           Learn React
         </a>
       </header>
-        <AboutPage/>
+        <AboutPage />
+        <img className="avatar" src="https://i.imgur.com/yXOvdOSs.jpg" alt = "alt"/>
     </div>
   );
 }
