@@ -7,6 +7,15 @@ function MyButton() {
       </button>
   );
 }
+
+function AboutPage() {
+    return (
+        <>
+            <h1>About</h1>
+            <p>Hello there.<br />How do you do?</p>
+        </>
+    );
+}
 function App() {
   return (
     <div className="App">
@@ -25,6 +34,7 @@ function App() {
           Learn React
         </a>
       </header>
+        <AboutPage/>
     </div>
   );
 }
