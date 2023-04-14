@@ -16,7 +16,22 @@ function AboutPage() {
         </>
     );
 }
-
+function AdminPanel() {
+    return (
+        <>
+            <h1>AdminPanel</h1>
+            <p>Hello there.<br />You are admin</p>
+        </>
+    );
+}
+function LoginForm() {
+    return (
+        <>
+            <h1>LoginForm</h1>
+            <p>Hello there.<br />Please login</p>
+        </>
+    );
+}
 
 const user = {
     name: 'Hedy Lamarr',
@@ -24,6 +39,12 @@ const user = {
     imageSize: 90,
 };
 
+let content;
+if (false) {
+    content = <AdminPanel />;
+} else {
+    content = <LoginForm />;
+}
 
 function App() {
   return (
@@ -58,6 +79,12 @@ function App() {
             }}
         />
             </div >
+        <div>
+            {content}
+        </div>
+        <div>
+            {true && <AdminPanel />}
+        </div>
     </div>
   );
 }
