@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 function MyButton() {
   return (
       <button>
@@ -45,6 +46,35 @@ if (false) {
 } else {
     content = <LoginForm />;
 }
+const products = [
+    { title: 'Cabbage', id: 1 },
+    { title: 'Garlic', id: 2 },
+    { title: 'Apple', id: 3 },
+];
+
+const listItems = products.map(product =>
+    <li key={product.id}>
+        {product.title}
+    </li>
+
+);
+
+function MyButton3() {
+    const [count, setCount] = useState(0);
+
+    function handleClick() {
+        setCount(count + 1);
+    }
+
+    return (
+        <button onClick={handleClick}>
+            Clicked {count} times
+        </button>
+    );
+}
+
+
+
 
 function App() {
   return (
@@ -85,8 +115,24 @@ function App() {
         <div>
             {true && <AdminPanel />}
         </div>
+
+<div>
+    <ul>{listItems}</ul>
+    <ul> <li >
+        list item just a test
+    </li></ul>
+
+</div>
+
+        <div>
+            <h1>Counters that update separately</h1>
+            <MyButton3 />
+            <MyButton3 />
+        </div>
+
     </div>
   );
+
 }
 
 export default App;
