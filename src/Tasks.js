@@ -26,6 +26,7 @@ const Tasks = () => {
 
     return (
         <div>
+            <p>here is Tasks.js example</p>
             {tasks.length > 0 && (
                 <ul>
                     {tasks.map(task => (
