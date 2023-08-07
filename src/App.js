@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import Tasks from './Tasks';
 import TaskTable from './TaskTable';
 import SearchBar from './SearchBar';
+import TaskForm from './TaskForm';
+import Profile from './Profile';
+import Avatar from './Avatar';
+import './App.css';
 function FilterableProductTable({ products }) {
     const [filterText, setFilterText] = useState('');
     const [inStockOnly, setInStockOnly] = useState(false);
@@ -111,17 +115,28 @@ function MainFrame(){
     // })();
 
  //todo find proper place
-    return <div>
-       <div><FilterableProductTable products={PRODUCTS}/></div>
+    return <div className="App-header">
+       {/*<div><FilterableProductTable products={PRODUCTS}/></div>*/}
 <div>_____________________________________________________</div>
 
         <Tasks/>
+<h1>Text Area example</h1>
 
         <textarea>
   Hello there, this is some text in a text area
 </textarea>
         <TaskTable/>
+        <div>_____________________________________________________</div>
+        <TaskForm/>
+        <div>_____________________________________________________</div>
+        <div><Profile/></div>
+        <div>_____________________________________________________</div>
+        <div><Avatar/></div>
     </div>
+
+
+
+
 }
 export default function App2() {
     return <MainFrame />;

@@ -26,7 +26,8 @@ const Tasks = () => {
 
     return (
         <div>
-            <p>here is Tasks.js example</p>
+            <p >Here is Tasks.js example</p>
+            <h1 style={{ color: 'red' }}><i>Task list</i></h1>
             {tasks.length > 0 && (
                 <ul>
                     {tasks.map(task => (
