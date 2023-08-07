@@ -106,6 +106,7 @@ const TaskTable = () => {
 
         return (
             <div>
+                <h1> TaskPane </h1>
                 <SearchBar
                     filterText={filterText}
                     inStockOnly={activeOnly}
