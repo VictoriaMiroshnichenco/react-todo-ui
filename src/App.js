@@ -1,11 +1,27 @@
 import React, { useEffect, useState } from "react";
+
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+
 import Tasks from './Tasks';
 import TaskTable from './TaskTable';
 import SearchBar from './SearchBar';
 import TaskForm from './TaskForm';
 import Profile from './Profile';
 import Avatar from './Avatar';
+import MyRoute from './MyRoute';
 import './App.css';
+
+
+
+
+
+
+
+
 function FilterableProductTable({ products }) {
     const [filterText, setFilterText] = useState('');
     const [inStockOnly, setInStockOnly] = useState(false);
@@ -108,6 +124,8 @@ const PRODUCTS = [
 
 
 function MainFrame(){
+
+
     // let TASKS;
     // (async () => {
     //     TASKS =  fetchTasks().then(tasks =>{tasks;});
@@ -129,7 +147,7 @@ function MainFrame(){
         <div>_____________________________________________________</div>
         <TaskForm/>
         <div>_____________________________________________________</div>
-        <div><Profile/></div>
+
         <div>_____________________________________________________</div>
         <div><Avatar/></div>
     </div>
@@ -139,5 +157,18 @@ function MainFrame(){
 
 }
 export default function App2() {
+
+
+
+    const rootElement = document.getElementById('root');
+    const root = createRoot(rootElement);
+
+    root.render(
+        <StrictMode>
+            <BrowserRouter>
+                <MyRoute />
+            </BrowserRouter>
+        </StrictMode>
+    );
     return <MainFrame />;
 }

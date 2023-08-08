@@ -1,0 +1,149 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.taskListLabel{
+    font-family: Montserrat;
+    font-size: 3.6vh;
+    color: #000000;
+}
+
+.taskListCheckBox{
+    opacity: 20%;
+}
+
+.checkmark{
+    display: none;
+}
+
+#stage{
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background-color: #EFEFDA;
+}
+
+#day{
+    height: 18.4%;
+    width: 65.32%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background-color: #0E0E13;
+}
+
+#userProfile{
+    height: 81.5%;
+    width: 23.6%;
+
+    position: absolute;
+    top: 18.4%;
+    left: 0px;
+
+    text-align: center;
+
+    background-color: #373940;
+}
+
+#userPhoto{
+    width: 70%;
+    aspect-ratio: 1/1;
+
+    border-radius: 100%;
+
+    background-color: #614B4E;
+
+    object-fit: cover;
+    object-position: 25% 60%;
+}
+
+#userPhotoDiv{
+    top: 6.94%;
+    position: relative;
+    margin: 0 auto 10.20% auto;
+}
+
+#userProfileText_Name{
+    width: 82.52%;
+    height: auto;
+
+    position: relative;
+    margin: 0 auto 0 auto;
+
+    text-align: center;
+
+    font-family: "Montserrat Light";
+    font-size: 3.6vh;
+    color: #FFFFFF;
+}
+
+#userProfileText_Description{
+    width: 82.52%;
+    height: auto;
+
+    position: relative;
+    margin: 0 auto 0 auto;
+
+    text-align: center;
+    word-wrap: break-word;
+
+    font-family: "Montserrat Light";
+    font-size: 2.4vh;
+    color: #FFFFFF;
+}
+
+#taskProfile{
+    height: 100%;
+    width: 34.7%;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    background-color: #77383F;
+}
+
+#taskPhoto{
+    height: 52.19%;
+    aspect-ratio: 1/1;
+
+    display: block;
+    position: absolute;
+
+    top: 39.96%;
+    margin: 0% 0% 0% -25%;
+}
+
+#date{
+    font-family: Montserrat;
+    font-size: 7vh;
+    color: #FFFFFF;
+
+    position: absolute;
+    top: 27.7%;
+    left: 3.6%;
+}
+
+#something{
+    font-family: "Montserrat Light";
+    font-size: 2.4vh;
+    color: #FFFFFF;
+
+    position: absolute;
+    align: right;
+    top: 46.53%;
+    right: 2.51%;
+}
+
+#taskList{
+    position: absolute;
+    top: 23.54%;
+    left: 25.53%;
+}
