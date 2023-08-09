@@ -12,6 +12,9 @@ import SearchBar from './SearchBar';
 import TaskForm from './TaskForm';
 import Profile from './Profile';
 import Avatar from './Avatar';
+import CardTask from './components/CardTask';
+
+
 import MyRoute from './MyRoute';
 import './App.css';
 
@@ -150,6 +153,11 @@ function MainFrame(){
 
         <div>_____________________________________________________</div>
         <div><Avatar/></div>
+        <div>_____________________________________________________</div>
+        <div><CardTask task_id='7fd921cfd2b64dc7b995633e8209f385'/></div>
+        <div>_____________________________________________________</div>
+
+
     </div>
 
 

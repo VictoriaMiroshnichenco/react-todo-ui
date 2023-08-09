@@ -3,7 +3,8 @@ import './App.css';
 import './style/style.css';
 
 function Profile() {
-  return (<div id="stage">
+  // return (<div id="stage">
+    return (<div id="stage">
       <div id="day">
           <label id="date">Tuesday, 22th March</label>
           <label id="something"><i>Write something here</i></label>
@@ -37,7 +38,7 @@ function Profile() {
           </div>
           <div>
               <input type="checkbox" className="taskListCheckBox"/>
-                  <label className="taskListLabel">Assasin Putin</label>
+                  <label className="taskListLabel">Kill Putin</label>
           </div>
       </div>
   </div>
