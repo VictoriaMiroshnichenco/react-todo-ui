@@ -13,6 +13,8 @@ import TaskForm from './TaskForm';
 import Profile from './Profile';
 import Avatar from './Avatar';
 import CardTask from './components/CardTask';
+import CreateTask from './components/CreateTask';
+
 
 
 import MyRoute from './MyRoute';
@@ -155,6 +157,8 @@ function MainFrame(){
         <div><Avatar/></div>
         <div>_____________________________________________________</div>
         <div><CardTask task_id='7fd921cfd2b64dc7b995633e8209f385'/></div>
+        <div>_____________________________________________________</div>
+        <div><CreateTask /></div>
         <div>_____________________________________________________</div>
 
 
