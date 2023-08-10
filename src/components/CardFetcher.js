@@ -24,7 +24,7 @@ function CardFetcher() {
     //     "modified": "2018-09-18T12:00:00",
     //     "completed": true
     // }];
-    let status = "in-process";
+    let status = "In-progress";
 
     const [tasks, setTasks] = useState([])
 
@@ -51,9 +51,11 @@ function CardFetcher() {
 
     return (<div  >
             <h1 style={{ color: 'red' }}>CardFetcher</h1>
+                <div><CardContainer tasks= {tasks} status ="All"/></div>
 
+                <div><CardContainer tasks= {tasks} status ="Defined"/></div>
                 <div><CardContainer tasks= {tasks} status ={status}/></div>
-
+                <div><CardContainer tasks= {tasks} status ="Done"/></div>
 
         </div>
     );
