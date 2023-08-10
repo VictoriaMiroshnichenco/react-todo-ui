@@ -72,6 +72,7 @@ const TaskTable = () => {
                 </thead>
                 <tbody>{rows}</tbody>
             </table>
+
         );
     }
 

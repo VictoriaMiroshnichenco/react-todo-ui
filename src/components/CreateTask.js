@@ -42,8 +42,9 @@ function CreateTask() {
     }
 
     return (<div  >
-            <h1 style={{ color: 'red' }}>Create Task</h1>
+            <h1 style={{ color: 'red' }}>Create or update Task</h1>
             <form onSubmit={handleEditForm}>
+                <input type="text" name="id" value={id} onChange={handleChange}/>
                 <input type="text" name="description" value={description} onChange={handleChange}/>
                 <input type="text" name="taskStatus" value={taskStatus} onChange={handleChange}/>
                 <button type="submit">Submit Changes</button>

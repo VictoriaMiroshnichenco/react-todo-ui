@@ -42,3 +42,10 @@
   width: 80pt;
   font-size: 12pt;
 }
+
+.displayed {
+  margin-left: 40%;
+  position: relative;
+  display: block;
+
+  margin-right: auto }

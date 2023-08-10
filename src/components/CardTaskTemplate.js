@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import '../App.css';
 import '../style/style.css';
 
-function CardTask ({task_id}){
+function CardTaskTemplate ({task}){
+    let computed_done ="";
     const task1= {
         "id": "a44b6db26aef49e39d1b68622f55c347",
         "description": "Learn Spring Boot",
@@ -11,32 +12,11 @@ function CardTask ({task_id}){
         "completed": true,
         "taskStatus": "Done"
     }
-
-    const [task, setTasks] = useState([])
-
-    const fetchTaskData = () => {
-        let url = 'http://laptop-mm38guqj:8080/api/todo/'+ task_id;
-        fetch(url, {
-            // mode: 'no-cors',//needs for crossdaomain
-            mode:        'cors',
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                'Authorization':'Basic dXNlcjpwYXNzd29yZA=='
-            },
-        }).then(response => {
-            return response.json()
-        })
-            .then(data => {
-                setTasks(data)
-            })
+    function isEmpty(val){
+        return (val === undefined || val == null || val.length <= 0) ? true : false;
     }
+    if(isEmpty(task)) task=task1;
 
-    useEffect(() => {
-        fetchTaskData()
-    }, [])
-
-    const computed_done = task.completed===false ? "Active" : "Completed";
 
     return (<div  >
 
@@ -74,4 +54,4 @@ function CardTask ({task_id}){
         </div>
     );
 }
-export default CardTask;
+export default CardTaskTemplate;

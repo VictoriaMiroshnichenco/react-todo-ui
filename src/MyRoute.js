@@ -14,20 +14,23 @@ import Profile from './Profile';
 import Avatar from './Avatar';
 import App2 from './App2';
 import Home from './Home';
-import CardTask from './components/CardTask';
+import CardTaskDemo from './pages/CardTaskDemo';
+import KanbanBoard from './pages/KanbanBoard';
 
 export default function MyRoute() {
 
     return (
         <div >
-            <button onClick={() => <Navigate to="/Profile" />}>Next Page</button>
+            {/*<button onClick={() => <Navigate to="/Profile" />}>Next Page</button>*/}
             <Link to="/home">Home Page</Link>
             <br/>
             <Link to="/profile">Profile</Link>
             <br/>
             <Link to="/all">All Components</Link>
             <br/>
-            <Link to="/cardTask">Card</Link>
+            <Link to="/cardTaskDemo">Card</Link>
+            <br/>
+            <Link to="/kanbanBoard">Kanban Board</Link>
             <br/>
 
 
@@ -37,7 +40,9 @@ export default function MyRoute() {
                 <Route exact path="/profile" element={<Profile/>}/>
                 <Route exact path="/all" element={<App2/>}/>
                 <Route exact path="/home" element={<Home/>}/>
-                <Route exact path="/cardTask" element={<CardTask/>}/>
+                <Route exact path="/cardTaskDemo" element={<CardTaskDemo/>}/>
+                <Route exact path="/kanbanBoard" element={<KanbanBoard/>}/>
+
                 {/*<Route exact path="/upcoming/:user" element={<Upcoming/>}/>*/}
                 {/*<Route exact path="/record/:user" element={<Record/>}/>*/}
                 {/*<Route path="*" element={<NotFound/>}/>*/}
